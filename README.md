@@ -19,15 +19,17 @@
 2. Android smartphone or Emulator runnign on API level 15 to 25
 
 **The screenshot of the app is:**
-![Main Actiuvity XML](https://s21.postimg.org/3k6wdtzon/Screenshot_from_2017-06-19_23-19-17.png)
+
+![Main Activity XML](https://s21.postimg.org/3k6wdtzon/Screenshot_from_2017-06-19_23-19-17.png)
 
 **The component tree view of the main xml is:**
+
 ![Component tree](https://s21.postimg.org/4azmjm21z/Screenshot_from_2017-06-19_23-20-13.png)
 
 
 **The core logic is at `ConvertLogic.java`**
 ```JAVA
-	public class ConvertLogic {
+public class ConvertLogic {
     //convert to celsius
     public static float convertFahrenheitToCelsius(float fahrenheit){
         return ((fahrenheit - 32)*5 / 9);
@@ -43,7 +45,7 @@
 **And the ``MainActivity.java`` is fairly simple**
 So simple that I decide to put it up on the README file:
 ```JAVA
-	public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private EditText editText;
     private Button button;
 
