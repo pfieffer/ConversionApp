@@ -1,31 +1,31 @@
 # Temperature App
 
-** Currently the app can: **
+**Currently the app can:**
 * Convert temperature from celsius to fahrenheit
 * Convert temperature from fahrenheit to celsius
 
-** Future Enhancements **
+**Future Enhancements**
 * Kelvin Scale Conversion
 * Rankine Scale Conversion
 
-** Installation **
+**Installation**
 1. Clone the repo / Download zip to your local machine
 2. Open Project on your Android Studio
 3. Build the project
 4. Run on your android smartphone.
 
-** Requirements **
+**Requirements**
 1. Android Studio
 2. Android smartphone or Emulator runnign on API level 15 to 25
 
-** The screenshot of the app is: **
+**The screenshot of the app is:**
 ![Main Actiuvity XML](https://s21.postimg.org/3k6wdtzon/Screenshot_from_2017-06-19_23-19-17.png)
 
-** The component tree view of the main xml is: **
+**The component tree view of the main xml is:**
 ![Component tree](https://s21.postimg.org/4azmjm21z/Screenshot_from_2017-06-19_23-20-13.png)
 
 
-** The core logic is at `ConvertLogic.java` **
+**The core logic is at `ConvertLogic.java`**
 ```JAVA
 	public class ConvertLogic {
     //convert to celsius
@@ -40,7 +40,7 @@
 }
 ```
 
-** And the ``MainActivity.java`` is fairly simple **
+**And the ``MainActivity.java`` is fairly simple**
 So simple that I decide to put it up on the README file:
 ```JAVA
 	public class MainActivity extends AppCompatActivity {
