@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/ravi/AndroidStudioProjects/TemperatureApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/ravi/AndroidStudioProjects/TemperatureApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4ac474017b664b8338771cf5fce9c0c5303a3d4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ravi/AndroidStudioProjects/TemperatureApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f1adfde40e0e4b434e62b260b5f661e87340c629">
+        <dex dex="/home/ravi/AndroidStudioProjects/TemperatureApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_51735eb0e1cc9b9b02ad63a5869ecba5e1bf1201/classes.dex" />
+    </item>
+
+</items>
