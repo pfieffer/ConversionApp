@@ -42,7 +42,7 @@ public class ConvertLogic {
 }
 ```
 
-**And the ``MainActivity.java`` is fairly simple**
+**And the ``MainActivity.java`` is fairly simple.**
 So simple that I decide to put it up on the README file:
 ```JAVA
 public class MainActivity extends AppCompatActivity {
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+```
 
 The app is a follow along of the tutorial at Vogella: http://www.vogella.com/tutorials/Android/article.html#tutorialtemperature with some minor deviations
 
