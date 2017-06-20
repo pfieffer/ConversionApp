@@ -1,11 +1,12 @@
 # Temperature App
 
 **Currently the app can:**
-* Convert temperature from celsius to fahrenheit
-* Convert temperature from fahrenheit to celsius
+* Convert temperature from celsius to any other unit
+* Convert temperature from fahrenheit to any other except Rankine
+* Convert temperature from Kelvin to any other except Rankine
 
 **Future Enhancements**
-* Kelvin Scale Conversion
+* ~~~Kelvin Scale Conversion~~~
 * Rankine Scale Conversion
 
 **Installation**
@@ -20,74 +21,54 @@
 
 **The screenshot of the app is:**
 
-![Main Activity XML](https://s21.postimg.org/3k6wdtzon/Screenshot_from_2017-06-19_23-19-17.png)
+![Main Activity XML](https://s13.postimg.org/b6wrak9uf/Screenshot.png)
 
 **The component tree view of the main xml is:**
 
-![Component tree](https://s21.postimg.org/4azmjm21z/Screenshot_from_2017-06-19_23-20-13.png)
+![Component tree](https://s13.postimg.org/rj6t0ao5z/Screenshot.png)
 
 
 **The core logic is at `ConvertLogic.java`**
 ```JAVA
 public class ConvertLogic {
-    //convert to celsius
-    public static float convertFahrenheitToCelsius(float fahrenheit){
+    //convert fahrenheit to celsius
+    public static Double convertFahrenheitToCelsius(Double fahrenheit){
         return ((fahrenheit - 32)*5 / 9);
     }
+    //convert fah to kelvin
+    public static Double convertFahrenheitToKelvin(Double fahrenheit){
+        return (((fahrenheit - 32) * 5/9) + 273.15 );
+    }
+    //convert fah to
 
-    //converts to fahrenheit
-    public static float convertCelsiusToFahrenheit(float celsius){
+
+    //convert celsius to fahrenheit
+    public static Double convertCelsiusToFahrenheit(Double celsius){
         return ((celsius*9) / 5) +32;
     }
-}
-```
-
-**And the ``MainActivity.java`` is fairly simple.**
-So simple that I decide to put it up on the README file:
-```JAVA
-public class MainActivity extends AppCompatActivity {
-    private EditText editText;
-    private Button button;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        editText = (EditText) findViewById(R.id.input_value);
-        button = (Button) findViewById(R.id.button_calc);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (editText.getText().length()==0){
-                    Toast.makeText(MainActivity.this, "Please enter a valid number", Toast.LENGTH_LONG).show();
-                }
-                else {
-                    RadioButton toCel,toFah;
-                    toCel = (RadioButton) findViewById(R.id.radio_opt1);
-                    toFah = (RadioButton) findViewById(R.id.radio_opt2);
-                    if(toCel.isChecked()==true){
-                        float inputCel = Float.parseFloat(editText.getText().toString());
-                        editText.setText(String.valueOf(ConvertLogic.convertFahrenheitToCelsius(inputCel)));
-                        toCel.setChecked(false);
-                        toFah.setChecked(true);
-                    }
-                    else if(toFah.isChecked()==true){
-                        float inputFah = Float.parseFloat(editText.getText().toString());
-                        editText.setText(String.valueOf(ConvertLogic.convertCelsiusToFahrenheit(inputFah)));
-                        toFah.setChecked(false);
-                        toCel.setChecked(true);
-                    }
-                    else {
-                        Toast.makeText(MainActivity.this, "No Conversion Selected", Toast.LENGTH_LONG).show();
-                    }
-                }
-            }
-        });
+    //convert celsius to rankine
+    public static  Double convertCelsiusToRankine(Double celsius){
+        return ((celsius*1.8)+491.67);
     }
+    //convert celsius to Kelvin
+    public static Double convertCelsiusToKelvin(Double celsius){
+        return (celsius + 273.15);
+    }
+
+
+    //convert Kelvin to Celsius
+    public static  Double convertKelvinToCelsius(Double kelvin){
+        return  (kelvin - 273.15);
+    }
+    //kelvin to fahrenheit
+    public static  Double convertKelvinToFahrenheit(Double kelvin){
+        return (((kelvin - 273.15) * 9/5) + 32 );
+    }
+
 }
 ```
 
-The app is a follow along of the tutorial at Vogella: http://www.vogella.com/tutorials/Android/article.html#tutorialtemperature with some minor deviations
+
+
+The initial idea to this app came from this tutorial at Vogella: http://www.vogella.com/tutorials/Android/article.html#tutorialtemperature with some minor deviations
 
