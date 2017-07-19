@@ -1,4 +1,4 @@
-# Temperature App
+# Conversion App
 
 **Currently the app can:**
 * Convert temperature from celsius to any other unit
@@ -8,6 +8,9 @@
 **Future Enhancements**
 * ~~~Kelvin Scale Conversion~~~
 * Rankine Scale Conversion
+* length Conversions
+* weight conversions
+* bs to ad and ad to bs conversion
 
 **Installation**
 1. Clone the repo / Download zip to your local machine
