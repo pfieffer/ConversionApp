@@ -21,9 +21,9 @@
 
 **The screenshots of the app are:**
 
-![Screenshot_20170719-151506.png](https://postimg.org/image/wsvs8wgl5/)
+[![Screenshot_20170719-151506.png](https://s4.postimg.org/hwx91b56l/Screenshot_20170719-151506.png)](https://postimg.org/image/wsvs8wgl5/)
 
-![Screenshot_20170719-151512.png](https://postimg.org/image/tajscifp5/)
+[![Screenshot_20170719-151512.png](https://s4.postimg.org/4ha8buwot/Screenshot_20170719-151512.png)]
 
 **The core logic is at `ConvertLogic.java`**
 ```JAVA
