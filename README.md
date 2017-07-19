@@ -19,14 +19,11 @@
 1. Android Studio
 2. Android smartphone or Emulator runnign on API level 15 to 25
 
-**The screenshot of the app is:**
+**The screenshots of the app are:**
 
-![Main Activity XML](https://s13.postimg.org/b6wrak9uf/Screenshot.png)
+![Screenshot_20170719-151506.png](https://postimg.org/image/wsvs8wgl5/)
 
-**The component tree view of the main xml is:**
-
-![Component tree](https://s13.postimg.org/rj6t0ao5z/Screenshot.png)
-
+![Screenshot_20170719-151512.png](https://postimg.org/image/tajscifp5/)
 
 **The core logic is at `ConvertLogic.java`**
 ```JAVA
