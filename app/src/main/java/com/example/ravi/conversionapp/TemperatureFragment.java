@@ -41,66 +41,73 @@ public class TemperatureFragment extends Fragment {
         spinner1 = (Spinner) view.findViewById(R.id.spinner1);
         spinner2 = (Spinner) view.findViewById(R.id.spinner2);
 
-       button.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               if (editText1.getText().length()==0){
-                   Toast.makeText(getActivity(), "Please enter a valid number", Toast.LENGTH_LONG).show();
-               }
-               else {
-                   Double inputValue = Double.parseDouble(editText1.getText().toString());
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (editText1.getText().length() == 0) {
+                    Toast.makeText(getActivity(), "Please enter a valid number", Toast.LENGTH_LONG).show();
+                } else {
+                    Double inputValue = Double.parseDouble(editText1.getText().toString());
 
-                   if(spinner1.getSelectedItem().toString().equals("Fahrenheit")){
-                       switch (spinner2.getSelectedItem().toString()){
-                           case "Celsius" : tv1.setText(String.valueOf(TemperatureConversionLogic.convertFahrenheitToCelsius(inputValue)));
-                               break;
-                           case "Kelvin" : tv1.setText(String.valueOf(TemperatureConversionLogic.convertFahrenheitToKelvin(inputValue)));
-                               break;
-                           case "Rankine" : //tv1.setText();
-                               break;
-                           default: tv1.setText(inputValue.toString());
-                               break;
-                       }
-                   }
-                   else if(spinner1.getSelectedItem().toString().equals("Celsius")){
-                       switch (spinner2.getSelectedItem().toString()){
-                           case "Fahrenheit" : tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToFahrenheit(inputValue)));
-                               break;
-                           case "Kelvin" : tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToKelvin(inputValue)));
-                               break;
-                           case "Rankine" : tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToRankine(inputValue)));
-                               break;
-                           default: tv1.setText(inputValue.toString());
-                               break;
-                       }
-                   }
-                   else if(spinner1.getSelectedItem().toString().equals("Kelvin")){
-                       switch (spinner2.getSelectedItem().toString()){
-                           case "Fahrenheit" : tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToFahrenheit(inputValue)));
-                               break;
-                           case "Celsius" : tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToCelsius(inputValue)));
-                               break;
-                           case "Rankine" : //tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToRankine(inputValue)));
-                               break;
-                           default: tv1.setText(inputValue.toString());
-                               break;
-                       }
-                   }
-                   else if(spinner1.getSelectedItem().toString().equals("Rankine")){
-                       switch (spinner2.getSelectedItem().toString()){
-                           case "Fahrenheit" : //tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToFahrenheit(inputValue)));
-                               break;
-                           case "Celsius" : //tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToCelsius(inputValue)));
-                               break;
-                           case "Kelvin" : //tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToRankine(inputValue)));
-                               break;
-                           default: tv1.setText(inputValue.toString());
-                               break;
-                       }
-                   }
-               }
-           }
-       });
+                    if (spinner1.getSelectedItem().toString().equals("Fahrenheit")) {
+                        switch (spinner2.getSelectedItem().toString()) {
+                            case "Celsius":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertFahrenheitToCelsius(inputValue)));
+                                break;
+                            case "Kelvin":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertFahrenheitToKelvin(inputValue)));
+                                break;
+                            case "Rankine": //tv1.setText();
+                                break;
+                            default:
+                                tv1.setText(inputValue.toString());
+                                break;
+                        }
+                    } else if (spinner1.getSelectedItem().toString().equals("Celsius")) {
+                        switch (spinner2.getSelectedItem().toString()) {
+                            case "Fahrenheit":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToFahrenheit(inputValue)));
+                                break;
+                            case "Kelvin":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToKelvin(inputValue)));
+                                break;
+                            case "Rankine":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToRankine(inputValue)));
+                                break;
+                            default:
+                                tv1.setText(inputValue.toString());
+                                break;
+                        }
+                    } else if (spinner1.getSelectedItem().toString().equals("Kelvin")) {
+                        switch (spinner2.getSelectedItem().toString()) {
+                            case "Fahrenheit":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToFahrenheit(inputValue)));
+                                break;
+                            case "Celsius":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToCelsius(inputValue)));
+                                break;
+                            case "Rankine": //tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToRankine(inputValue)));
+                                break;
+                            default:
+                                tv1.setText(inputValue.toString());
+                                break;
+                        }
+                    } else if (spinner1.getSelectedItem().toString().equals("Rankine")) {
+                        switch (spinner2.getSelectedItem().toString()) {
+                            case "Fahrenheit": //tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToFahrenheit(inputValue)));
+                                break;
+                            case "Celsius": //tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToCelsius(inputValue)));
+                                break;
+                            case "Kelvin": //tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToRankine(inputValue)));
+                                break;
+                            default:
+                                tv1.setText(inputValue.toString());
+                                break;
+                        }
+                    }
+                }
+            }
+        });
 
         return view;
     }

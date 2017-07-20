@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Conversion App</string>
     <string name="action_settings">Settings</string>
+
+    <string name="temp_intro">Temperature Conversion</string>
     <string name="celsius">to Celsius</string>
     <string name="fahrenheit">to Fahrenheit</string>
     <string name="rankine">to Rankine</string>
@@ -14,8 +16,21 @@
         <item>Rankine</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="length_intro">Length Conversion</string>
+    <string name="meter">to Meter</string>
+    <string name="kilometer">to Kilometer</string>
+    <string name="millimeter">to Millimeter</string>
+    <string name="inch">to Inches</string>
+    <string name="feet">to Feet</string>
+
+    <string-array name="length_units">
+        <item>Kilometer</item>
+        <item>Meter</item>
+        <item>Centimeter</item>
+        <item>Millimeter</item>
+        <item>Feet</item>
+        <item>Inch</item>
+    </string-array>
 
 
 </resources>

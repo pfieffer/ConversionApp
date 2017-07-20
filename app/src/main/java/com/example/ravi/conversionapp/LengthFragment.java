@@ -46,42 +46,48 @@ public class LengthFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (editText1.getText().length()==0){
+                if (editText1.getText().length() == 0) {
                     Toast.makeText(getActivity(), "Please enter a valid number", Toast.LENGTH_LONG).show();
-                }
-                else {
+                } else {
                     Float inputValue = Float.parseFloat(editText1.getText().toString());
 
                     //switch cases would be better maybe?
-                    if(spinner1.getSelectedItem().toString().equals("Meter")){
-                        switch (spinner2.getSelectedItem().toString()){
-                            case "Meter" : tv1.setText(inputValue.toString());
+                    if (spinner1.getSelectedItem().toString().equals("Meter")) {
+                        switch (spinner2.getSelectedItem().toString()) {
+                            case "Meter":
+                                tv1.setText(inputValue.toString());
                                 break;
-                            case "Kilometer" : tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToKilometer(inputValue)));
+                            case "Kilometer":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToKilometer(inputValue)));
                                 break;
-                            case "Centimeter" : tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToCentimeter(inputValue)));
+                            case "Centimeter":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToCentimeter(inputValue)));
                                 break;
-                            case "Millimeter" : tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToMillimeter(inputValue)));
+                            case "Millimeter":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToMillimeter(inputValue)));
                                 break;
-                            case  "Feet" :
+                            case "Feet":
                                 break;
-                            case "Inches" :
+                            case "Inches":
                                 break;
                         }
-                    }
-                    else if(spinner1.getSelectedItem().toString().equals("Kilometer")){
-                        switch (spinner2.getSelectedItem().toString()){
-                            case "Meter" : tv1.setText(inputValue.toString());
+                    } else if (spinner1.getSelectedItem().toString().equals("Kilometer")) {
+                        switch (spinner2.getSelectedItem().toString()) {
+                            case "Meter":
+                                tv1.setText(inputValue.toString());
                                 break;
-                            case "Kilometer" : tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToKilometer(inputValue)));
+                            case "Kilometer":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToKilometer(inputValue)));
                                 break;
-                            case "Centimeter" : tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToCentimeter(inputValue)));
+                            case "Centimeter":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToCentimeter(inputValue)));
                                 break;
-                            case "Millimeter" : tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToMillimeter(inputValue)));
+                            case "Millimeter":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToMillimeter(inputValue)));
                                 break;
-                            case  "Feet" :
+                            case "Feet":
                                 break;
-                            case "Inches" :
+                            case "Inches":
                                 break;
                         }
                     }
