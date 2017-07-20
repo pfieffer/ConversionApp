@@ -1,10 +1,10 @@
-package com.example.ravi.conversionapp;
+package com.example.ravi.conversionapp.ConversionLogic;
 
 /**
- * Created by ravi on 6/19/17.
+ * Created by ravi on 7/20/17.
  */
 
-public class ConvertLogic {
+public class TemperatureConversionLogic {
     //convert fahrenheit to celsius
     public static Double convertFahrenheitToCelsius(Double fahrenheit){
         return ((fahrenheit - 32)*5 / 9);
@@ -38,5 +38,4 @@ public class ConvertLogic {
     public static  Double convertKelvinToFahrenheit(Double kelvin){
         return (((kelvin - 273.15) * 9/5) + 32 );
     }
-
 }
