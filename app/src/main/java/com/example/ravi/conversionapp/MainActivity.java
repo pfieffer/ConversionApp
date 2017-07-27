@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements ViewPagerEx.OnPag
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new TemperatureFragment(), "Temperature");
         adapter.addFragment(new LengthFragment(), "Length");
-//        adapter.addFragment(new FacebookFragment(), "FACEBOOK");
+        adapter.addFragment(new FrequencyFragment(), "Frequency");
 //        adapter.addFragment(new TwitterFragment(), "TWITTER");
         viewPager.setAdapter(adapter);
     }
