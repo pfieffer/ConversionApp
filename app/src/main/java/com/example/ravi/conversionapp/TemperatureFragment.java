@@ -57,7 +57,8 @@ public class TemperatureFragment extends Fragment {
                             case "Kelvin":
                                 tv1.setText(String.valueOf(TemperatureConversionLogic.convertFahrenheitToKelvin(inputValue)));
                                 break;
-                            case "Rankine": //tv1.setText();
+                            case "Rankine":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertFahrenheitToRankine(inputValue)));
                                 break;
                             default:
                                 tv1.setText(inputValue.toString());
@@ -86,7 +87,8 @@ public class TemperatureFragment extends Fragment {
                             case "Celsius":
                                 tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToCelsius(inputValue)));
                                 break;
-                            case "Rankine": //tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToRankine(inputValue)));
+                            case "Rankine":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinTORankine(inputValue)));
                                 break;
                             default:
                                 tv1.setText(inputValue.toString());
@@ -94,11 +96,14 @@ public class TemperatureFragment extends Fragment {
                         }
                     } else if (spinner1.getSelectedItem().toString().equals("Rankine")) {
                         switch (spinner2.getSelectedItem().toString()) {
-                            case "Fahrenheit": //tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToFahrenheit(inputValue)));
+                            case "Fahrenheit":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertRankineToFahrenheit(inputValue)));
                                 break;
-                            case "Celsius": //tv1.setText(String.valueOf(TemperatureConversionLogic.convertKelvinToCelsius(inputValue)));
+                            case "Celsius":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertRankineToCelsius(inputValue)));
                                 break;
-                            case "Kelvin": //tv1.setText(String.valueOf(TemperatureConversionLogic.convertCelsiusToRankine(inputValue)));
+                            case "Kelvin":
+                                tv1.setText(String.valueOf(TemperatureConversionLogic.convertRankineToKelvin(inputValue)));
                                 break;
                             default:
                                 tv1.setText(inputValue.toString());
