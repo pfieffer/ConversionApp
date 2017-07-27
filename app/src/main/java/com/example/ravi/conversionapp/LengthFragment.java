@@ -67,8 +67,10 @@ public class LengthFragment extends Fragment {
                                 tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToMillimeter(inputValue)));
                                 break;
                             case "Feet":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToFeet(inputValue)));
                                 break;
                             case "Inches":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToInch(inputValue)));
                                 break;
                         }
                     } else if (spinner1.getSelectedItem().toString().equals("Kilometer")) {
@@ -86,8 +88,10 @@ public class LengthFragment extends Fragment {
                                 tv1.setText(String.valueOf(LengthConversionLogic.convertMeterToMillimeter(inputValue)));
                                 break;
                             case "Feet":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertKiloMeterToFeet(inputValue)));
                                 break;
                             case "Inches":
+                                tv1.setText(String.valueOf(LengthConversionLogic.convertKilometerToInch(inputValue)));
                                 break;
                         }
                     }

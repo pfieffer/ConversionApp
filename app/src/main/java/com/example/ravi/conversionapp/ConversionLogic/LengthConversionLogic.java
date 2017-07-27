@@ -5,31 +5,23 @@ package com.example.ravi.conversionapp.ConversionLogic;
  */
 
 public class LengthConversionLogic {
-    //convert meter to centimeter
+    //convert meter to others
     public static float convertMeterToCentimeter(Float meter){
         return (meter * 100);
     }
-    //convert meter to kilometer
     public static float convertMeterToKilometer(float meter){
         return (meter / 1000);
     }
     public static float convertMeterToMillimeter(float meter){return (meter * 1000);}
-    //convert meter to feet
-    //convert meter to inch
+    public static Double convertMeterToFeet(float meter){return  (meter * 3.28084);}
+    public static Double convertMeterToInch(float meter){return (meter * 39.37008);}
 
 
-    //convert celsius to fahrenheit
-    public static Double convertCelsiusToFahrenheit(Double celsius){
-        return ((celsius*9) / 5) +32;
-    }
-    //convert celsius to rankine
-    public static  Double convertCelsiusToRankine(Double celsius){
-        return ((celsius*1.8)+491.67);
-    }
-    //convert celsius to Kelvin
-    public static Double convertCelsiusToKelvin(Double celsius){
-        return (celsius + 273.15);
-    }
+    //convert Kilometer to others
+    public static float convertKiloMeterToCentimeter(float kiloMeter){return (kiloMeter * 100000);}
+    public static float convertKiloMeterToMillimeter(float kiloMeter){return (kiloMeter * 1000000);}
+    public static Double convertKiloMeterToFeet(float kiloMeter){return (kiloMeter * 3280.84);}
+    public static Double convertKilometerToInch(float kiloMeter){return (kiloMeter * 39370.08);}
 
 
 }
