@@ -1,14 +1,14 @@
 # Conversion App
 
 **Currently the app can:**
-* Convert temperature from celsius to any other unit
-* Convert temperature from fahrenheit to any other except Rankine
-* Convert temperature from Kelvin to any other except Rankine
+* Convert temperature to and from any of the four units.
+* Convert frequency units.
+* Length conversions. Needs additions
 
 **Future Enhancements**
 * ~~~Kelvin Scale Conversion~~~
-* Rankine Scale Conversion
-* length Conversions
+* ~~~Rankine Scale Conversion~~~
+* ~~~length Conversions~~~
 * weight conversions
 * bs to ad and ad to bs conversion
 
@@ -24,13 +24,13 @@
 
 **The screenshots of the app are:**
 
-[![Screenshot_20170719-151506.png](https://s4.postimg.org/hwx91b56l/Screenshot_20170719-151506.png)](https://postimg.org/image/wsvs8wgl5/)
+[![Screenshot_20170719-151506.png](https://s4.postimg.org/hwx91b56l/Screenshot_20170719-151506.png)]
 
 [![Screenshot_20170719-151512.png](https://s4.postimg.org/4ha8buwot/Screenshot_20170719-151512.png)]
 
-**The core logic is at `ConvertLogic.java`**
+**The core logic is at `TemperatureConversionLogic.java`**
 ```JAVA
-public class ConvertLogic {
+public class TemperatureConversionLogic {
     //convert fahrenheit to celsius
     public static Double convertFahrenheitToCelsius(Double fahrenheit){
         return ((fahrenheit - 32)*5 / 9);
@@ -70,5 +70,5 @@ public class ConvertLogic {
 
 
 
-The initial idea to this app came from this tutorial at Vogella: http://www.vogella.com/tutorials/Android/article.html#tutorialtemperature with some minor deviations
+The initial idea to this app came from this tutorial at Vogella: http://www.vogella.com/tutorials/Android/article.html#tutorialtemperature
 
