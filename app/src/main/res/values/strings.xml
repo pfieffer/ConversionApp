@@ -32,5 +32,27 @@
         <item>Inch</item>
     </string-array>
 
+    <string name="frequency_intro">Frequency Conversion</string>
+    <string name="hertz">to Hertz</string>
+    <string name="kilohertz">to Kilhertz</string>
+    <string name="exahertz">to Exahertz</string>
+    <string name="gigahertz">to Gigahertz</string>
+    <string name="megahertz">to Megahertz</string>
+    <string name="microhertz">to Microhertz</string>
+    <string name="millihertz">to Millihertz</string>
+    <string name="petahertz">to Petahertz</string>
+    <string name="terahertz">to Terahertz</string>
+    <string-array name="frequency_units">
+        <item>Exahertz</item>
+        <item>Gigahertz</item>
+        <item>Hertz</item>
+        <item>Kilohertz</item>
+        <item>Megahertz</item>
+        <item>Microhertz</item>
+        <item>Millihertz</item>
+        <item>Petahertz</item>
+        <item>Terahertz</item>
+    </string-array>
+
 
 </resources>
